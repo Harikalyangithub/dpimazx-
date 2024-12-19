@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-
+body{
+  margin: 0;
+  padding: 0;
+  gap:0;
+}
 .food-munch-logo {
   width: 150px;
   height: 100px;
@@ -44,8 +48,7 @@
   text-transform: uppercase; 
   transition: color 0.3s ease; 
 }
-.banner-section-bg-container {
-  background-image: url("https://res.cloudinary.com/dvbvmdfyb/image/upload/v1734555716/vp-lowcost_vb8hou.webp");
+/*.banner-section-bg-container {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +74,7 @@
   letter-spacing: 1px;
   text-align: center;
   
-}
+}*/
 
 .custom-outline-button {
   font-family: 'Montserrat', sans-serif; /* Clean and modern font */
@@ -101,15 +104,20 @@
   background-color: rgb(211, 211, 211);
 }
 .wcu-section-heading {
-  color: #183b56;
-  font-family: "Roboto";
-  font-size: 28px;
+  font-family: 'Playfair Display', 'Montserrat', serif;
+  font-size: 25px;
   font-weight: 700;
+  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(5, 4, 4);
 }
 .wcu-section-description {
-  color: #5a7184;
-  font-family: "Roboto";
-  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: 1px;
 }
 .wcu-card {
   text-align: center;
@@ -125,13 +133,13 @@
 }
 .wcu-card-title {
   color: #323f4b;
-  font-family: "Roboto";
+  font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: 500;
 }
 .wcu-card-description {
   color: #7b8794;
-  font-family: "Roboto";
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
 }
 .offers {
@@ -144,9 +152,10 @@
 }
 .menu-section-heading {
   color: #183b56;
-  font-family: "Roboto";
+  font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
+  padding:10px;
 }
 .menu-item-image {
   border-radius: 16px;
@@ -165,7 +174,7 @@
   font-weight: 500;
 }
 .menu-item-card {
-  border : 2px solid rgb(139, 69, 19);
+  border : 1px solid rgb(139, 69, 19);
 }
 .healthy-food-section {
   background-color: #929079;
@@ -328,3 +337,50 @@
   border-radius: 8px; /* Optional: Match the card's border-radius */
   overflow: hidden; /* Ensures no content spills outside */
 }
+
+/* Custom CSS for the banner */
+/* Base styles (for large screens) */
+.video-banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-banner video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the video covers the entire banner area */
+}
+
+.video-banner {
+  margin-bottom: 0;
+  margin: 0;
+  padding: 0; 
+}
+
+/* Media query for medium screens (tablets) */
+@media (max-width: 1024px) {
+  .video-banner {
+      height: auto; /* Adjust height for tablets */
+  }
+}
+
+/* Media query for small screens (smartphones) */
+@media (max-width: 768px) {
+  .video-banner {
+      height: auto; /* Adjust height for mobile devices */
+  }
+
+  .video-banner video {
+      object-position: auto; /* Center the video for better appearance on smaller screens */
+  }
+}
+
+/* Media query for extra small screens (very small phones or portrait mode) */
+@media (max-width: 480px) {
+  .video-banner {
+      height: auto; /* Further reduce height for very small screens */
+  }
+}
+

@@ -15,3 +15,6 @@ function filterItems(category) {
     }
   });
 }
+document.querySelectorAll('.icon-class').forEach(icon => {
+  icon.style.display = 'none';
+});
