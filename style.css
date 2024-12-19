@@ -6,19 +6,43 @@
 }
 #navItem1 {
   color: #323f4b;
-  font-family: "Roboto";
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px; /* Font size for the navbar brand */
+  color: #ffffff; /* Font color for the brand */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 2px; /* Spacing between characters */
+  text-transform: uppercase; /* Uppercase text */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 #navItem2 {
   color: #323f4b;
   font-family: "Roboto";
+  font-size: 15px; /* Font size for the navbar brand */
+  color: #ffffff; /* Font color for the brand */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 2px; /* Spacing between characters */
+  text-transform: uppercase; /* Uppercase text */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 #navItem3 {
   color: #323f4b;
   font-family: "Roboto";
+  font-size: 15px; /* Font size for the navbar brand */
+  color: #ffffff; /* Font color for the brand */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 2px; /* Spacing between characters */
+  text-transform: uppercase; /* Uppercase text */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 #navItem4 {
   color: #323f4b;
   font-family: "Roboto";
+  font-size: 15px; /* Font size for the navbar brand */
+  color: #ffffff; /* Font color for the brand */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 2px; /* Spacing between characters */
+  text-transform: uppercase; /* Uppercase text */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .banner-section-bg-container {
   background-image: url("https://res.cloudinary.com/dvbvmdfyb/image/upload/v1734555716/vp-lowcost_vb8hou.webp");
@@ -28,35 +52,50 @@
   background-attachment: fixed;
 }
 .banner-heading {
-  color: white;
+  font-family: 'Playfair Display', 'Montserrat', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #333333; /* Adjust color as per your theme */
+  text-transform: uppercase; /* Optional for a bold look */
+  letter-spacing: 1px;
+  color: rgb(18, 17, 17);
   font-family: "Roboto";
   font-size: 45px;
   font-weight: 300;
 }
 .banner-caption {
-  color: #f5f7fa;
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 300;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: 1px;
+  text-align: center;
+  
 }
-.custom-button {
-  color: white;
-  background-color: #d0b200;
-  width: 130px;
-  height: 45px;
-  border-width: 0;
-  border-radius: 8px;
-  margin-right: 10px;
-}
+
 .custom-outline-button {
-  color: #d0b200;
-  background-color: transparent;
-  width: 130px;
-  height: 45px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d0b200;
-  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif; /* Clean and modern font */
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF; /* White text for contrast */
+  background-color: #4A4A4A; /* Dark gray button background */
+  padding: 12px 24px; /* Comfortable padding */
+  border: none; /* No border for a modern look */
+  border-radius: 4px; /* Slightly rounded corners */
+  text-transform: uppercase; /* Bold and impactful text */
+  letter-spacing: 1px; /* Slight spacing for readability */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+.custom-outline-button:hover {
+  background-color: #E07A5F; /* Change to accent color on hover */
+  color: #FFFFFF; /* Ensure text remains legible */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle hover shadow */
+}
+
+.custom-outline-button:active {
+  transform: scale(0.98); /* Slight scale-down for click effect */
 }
 .wcu-section {
   background-color: #447D72;
